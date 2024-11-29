@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "course-backend"
+version = "0.1.0"
+description = ""
+authors = ["Alizarbukhari <alizar.fsd@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.5"
+uvicorn = {extras = ["standard"], version = "^0.32.1"}
+pydantic = "^2.10.2"
+python-dotenv = "^1.0.1"
+sqlmodel = "^0.0.22"
+psycopg2 = "^2.9.10"
+
+
+
+[tool.poetry.scripts]
+dev= "course_backend.main:start"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
